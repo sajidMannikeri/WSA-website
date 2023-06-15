@@ -1,0 +1,315 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 13px;
+    box-shadow: 0px 5px 7px -2px rgb(191, 189, 189);
+    position: fixed;
+    background-color: white;
+    z-index: 100;
+    width: 100%;
+}
+
+.tabGroup{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.tabLink{
+    cursor: pointer;
+}
+
+.tabLink:hover{
+    background-color: rgba(0, 253, 253, 0.829);
+    border-radius: 20px;
+    color: whitesmoke;
+    box-shadow: 5px 5px 10px 1px gray;
+    
+}
+.mainLogo{
+    width: 100%;
+    max-width: 100px;
+    border-radius: 50%;
+    position: relative;
+    left:  2em;
+}
+
+.tab{
+    padding: 0px 50px 0px 50px;
+    font-size: 20px;
+}
+
+.btn1{
+    width: 100%;
+    max-width: 100px;
+    max-height: 50px;
+    position: relative;
+    top: 1.5rem;
+    right: 2em;
+    padding: 10px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    background-color: cyan;
+    cursor: pointer;
+}
+
+.btn1:hover{
+    background-color:  #F6CD80;
+    color: white;
+    box-shadow: 5px 5px 10px 1px gray;
+}
+
+.topPart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+}
+
+.heading{
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    font-weight: bold;
+    padding: 40px 20px;
+    width: 70%;
+
+}
+
+.topText{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    padding: 40px 20px;
+    width: 70%;
+}
+
+.button{
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: #F6CD80;
+    color: black;
+    font-weight: bold;
+    box-shadow: 5px 5px 10px 1px gray;
+}
+
+.mainImage{
+    width: 100%;
+}
+
+.mainImageDiv{
+    margin: 20px;
+}
+
+.aboutDiv{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #F6CD80;
+}
+
+.aboutImage{
+    width: 100%;
+    margin: 40px 0;
+}
+
+.aboutHead{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.aboutCont{
+    font-size: 20px;
+    margin: 40px 0;
+    width: 100%;
+    max-width: 100em;
+}
+
+.aboutCont1{
+    font-size: 20px;
+    margin: 40px 0;
+    width: 100%;
+    max-width: 50em;
+}
+
+.offerDiv{
+    padding: 20px;
+    text-align: center;
+}
+
+.offerGroup, .offer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer{
+    margin: 20px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.offerTitle{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.offerCont{
+    font-size: 20px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footerCol{
+    margin: 20px 0;
+}
+
+.colTitle{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+
+.colDetail{
+    font-size: 18px;
+    word-spacing: 10px;
+    margin-left: 30px;
+}
+
+.timings{
+    margin-top: 10px;
+    margin-left: 45px;
+    text-align: center;
+    font-weight: 600;
+}
+
+ /* CSS for the footer */
+ .footer1 {
+    background-color: #F6CD80;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer1 .icon{
+    margin: 10px 0px 10px 0px;
+
+}
+
+.footer1 .icons{
+    margin: 20px;
+    padding: 3px;
+    text-decoration: none;
+}
+
+.footer1 .icons #insta{
+    color: #E1306C;
+}
+
+.footer1 .icons #fb{
+    color: #0255c2;
+}
+
+.footer1 .icons #yt{
+    color: #FF0000;
+}
+
+.footer1 .icons #twitter{
+    color: #1DA1F2;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .navbar{
+        text-align: center;
+    }
+
+    .tabGroup{
+        display: none;
+    }
+
+    .compName{
+        width: 100%;
+    }
+
+    .topText{
+        width: 88%;
+        margin-top: 60px;
+    }
+
+    .heading{
+        width: 88%;
+        margin-top: 40px;
+    }
+
+    .btn1{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footerCol{
+        width: 30%;
+        text-align: justify;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .aboutDiv{
+        flex-direction: row;
+    }
+
+    .aboutContDiv{
+        padding-right: 20px;
+    }
+
+    .offerGroup{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .offer{
+        width: 40%;
+    }
+
+    .topMainText{
+        font-size: 80px;
+    }
+}
